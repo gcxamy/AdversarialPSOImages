@@ -23,7 +23,7 @@ def compareImagesLinfty(image1,image2):
     diff=np.max(np.abs(np.subtract(image1,image2)))
     return diff
     
-def SSIM(image1,image2):
+def SSIM(image1,image2):#计算图片相似度
     image1=np.add(image1,0.5)
     image2=np.add(image2,0.5)
     m1=np.mean(image1)
